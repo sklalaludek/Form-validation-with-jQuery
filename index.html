@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Form validation with jQuery</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <form method="post" action="index.php">
+            <label for="type_person">Person</label><input type="radio" id="type_person" name="type" value="person" />
+            <label for="type_company">Company</label><input type="radio" id="type_company" name="type" value="company" />
+            <hr />
+            <label for="first_name">First name</label><input type="text" id="first_name" name="first_name" value="John" />
+            <div id="first_name_error"></div>
+            <label for="last_name">Last name</label><input type="text" id="last_name" name="last_name" value="Doe" />
+            <div id="last_name_error"></div>
+            <label for="femail">E-mail</label><input type="text" id="email" name="email" value="john@example.com" />
+            <div id="email_error"></div>
+            <hr />
+            <label for="company_name">Company name</label><input type="text" id="company_name" name="company_name" value="" />
+            <div id="company_name_error"></div>
+            <label for="phone">Company phone</label><input type="text" id="phone" name="phone" value="234-567-890" />
+            <div id="phone_error"></div>
+            <input type="submit" name="submit" value="submit">
+        </form>
+</body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="src/main.js"></script>
+
+</html>
